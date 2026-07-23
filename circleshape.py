@@ -32,6 +32,7 @@ class CircleShape(pygame.sprite.Sprite):
         
         combined_position = player_position + asteroid_position
         combined_radius = player_radius + asteroid_radius
+        
         if combined_position <= combined_radius:
             return True
         return False
